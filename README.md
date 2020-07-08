@@ -1,24 +1,39 @@
-# README
+# chat-space  DB設計
+## shopsテーブル
+| Column | Type | Options |
+|:-------|-----:|:-------:|
+| name | string | null: false , index: true , unique: true |
+| number | integer | null: false |
+| image | text | null: false |
+### Association
+- has_many :messages
+- has_many :items, through: :shops_items
+- has_many :shops_items
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## messagesテーブル
+| Column | Type | Options |
+|:-------|-----:|:-------:|
+| shop | references | null: false , foreign_key: true |
+| item | references | null: false , foreign_key: true |
+| content | text | |
+### Association
+- belongs_to :shops
+- belongs_to :items
 
-Things you may want to cover:
+## itemsテーブル
+| Column | Type | Options |
+|:-------|-----:|:-------:|
+| name | string | null: false |
+| image | text | null: false |
+### Association
+- has_many :messages
+- has_many :shops, through: :shops_items
+- has_many :shops_items
 
-* Ruby version
+## shops_itemsテーブル
+| Column | Type | Options |
+|:-------|-----:|:-------:|
+| shop | references | null: false , foreign_key: true |
+| item | references | null: false , foreign_key: true |
+### Association
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

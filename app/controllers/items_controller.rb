@@ -1,0 +1,26 @@
+class ItemsController < ApplicationController
+
+  def new
+    @item = Item.new
+    #@item.shops << current_shop
+  end
+
+  def create
+    @item = Item.new(item_params)
+    if @item.save
+      redirect_to root_path, notice: 'グループを作成しました'
+    else
+      render :new
+    end
+  end
+
+  def search
+    @items = Item.search(params[:keyword])
+  end
+
+  private
+  def item_params
+    params.require(:item).permit(:name, shop_ids: [])
+  end
+
+end

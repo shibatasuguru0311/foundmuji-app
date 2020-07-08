@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+
+.Header{
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  alignitems: center;
+  .Image{
+    margin-bottom: 30px;
+  }
+}
+.first-message{
+  text-align: center;
+  font-size: 12px;
+  }
+
+  .Search__Btn{
+    display: flex;
+    justify-content: center;
+    form{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    .search-name{
+      height: 50px;
+      background-color: pink;
+      border: none;
+      border-radius: 10px;
+      padding-left:10px;
+    }
+    .search-btn{
+      width: 100px;
+      height: 50px;
+      padding: 0 5px;
+      margin-left: 5px;
+      background-color: pink;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+
+    }
+  }
+}
+
+.second-message{
+  text-align: center;
+  font-size: 12px;
+  }
+
+  .Wbtn{
+    display: flex;
+    justify-content: center;
+      .create-btn{
+        idth: 100px;
+      height: 50px;
+      padding: 0 5px;
+      margin-left: 5px;
+      background-color: pink;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      }
+      .like-btn{
+      width: 100px;
+      height: 50px;
+      padding: 0 5px;
+      margin-left: 5px;
+      background-color: pink;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      }
+  }
+
+  .third-message{
+    text-align: center;
+    font-size: 12px;
+    }
+
+    .Btn{   
+      display: flex;
+      justify-content: center;
+      .btn-one{
+        width: 100px;
+      height: 50px;
+      padding: 0 5px;
+      margin-left: 5px;
+      background-color: pink;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      }
+      .btn-two{
+        width: 100px;
+      height: 50px;
+      padding: 0 5px;
+      margin-left: 5px;
+      background-color: pink;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      }
+      .btn-three{
+        width: 100px;
+      height: 50px;
+      padding: 0 5px;
+      margin-left: 5px;
+      background-color: pink;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      }
+      .btn-four{
+        width: 100px;
+      height: 50px;
+      padding: 0 5px;
+      margin-left: 5px;
+      background-color: pink;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      }
+    }
+    .Logout{   
+      display: flex;
+      justify-content: center;
+      .logout-btn{
+        width: 100px;
+      height: 50px;
+      padding: 0 5px;
+      margin-left: 5px;
+      background-color: pink;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      margin-top:100px;
+      }
+    }
