@@ -1,0 +1,27 @@
+%h1.Itemname "商品の名前を記入したいところ"
+
+.Itemimg
+  %p.Image
+    =image_tag "koala-pan.jpg", alt: "イメージ画像未登録", class: "image"
+    
+.MessageBox
+  = render partial: 'message', collection: @messages
+    
+
+
+.Logout2
+  .Logout__btn2
+    = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn2'
+
+.Toppage
+  .Toppage__btn
+    = link_to "トップページ", root_path, method: :get, class: 'toppage-btn'
+
+
+
+.Main_chat__Message_form
+  = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
+    .input-box
+      = f.text_field :body, class: "input-box__text", placeholder: "type a message"
+ 
+    = f.submit "Send", class: "submit-btn" 

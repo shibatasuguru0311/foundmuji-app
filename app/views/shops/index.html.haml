@@ -1,0 +1,44 @@
+
+.Header
+  %p.Image
+    =image_tag "foundmuji.png", alt: "Found MUJI", class: "image"
+
+%p.first-message　下のアイテム欄から商品を探そう
+
+.Search__Btn
+  = form_with(url: search_items_path, local: true, method: :get, class: "search-name") do |form|
+    = form.text_field :keyword, placeholder: "商品を検索する", class: "search-input"
+    = form.submit "検索", class: "search-btn" 
+
+-#.Search__Btn
+  -#= form_with model: @item do |form|
+    -#=form.text_field :items, {placeholder:"ITEM",class:"search-name"}
+    -#=form.submit 'SEARCH',class: "search-btn"
+
+
+%p.second-message　なければ自分で作ろう
+.Wbtn    
+  .Create__Btn
+    = link_to "つくる", new_item_path, method: :get, class: 'create-btn'
+
+  .Like__Btn
+    = form_with model: @item do |form|
+      = form.submit "LIKE", class: 'like-btn'
+%p.third-message  新着コメントだよ
+.Btn
+  .Btn__One
+    = form_with model: @item do |form|
+      = form.submit "プーパッポン", class: 'btn-one'
+  .Btn__Two
+    = form_with model: @item do |form|
+      = form.submit "マッサマン", class: 'btn-two'
+  .Btn__Tree
+    = form_with model: @item do |form|
+      = form.submit "バターチキン", class: 'btn-three'
+  .Btn__Four
+    = form_with model: @item do |form|
+      = form.submit "ゲーンパー", class: 'btn-four'
+
+.Logout
+  .Logout__btn
+    = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn'

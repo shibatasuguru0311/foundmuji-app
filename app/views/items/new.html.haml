@@ -1,0 +1,14 @@
+%p 商品とうろく
+= form_with model: @item , local: true do |f|
+  = f.text_field :name, class: "SettingItemForm__input", placeholder: "商品名を入力してください"
+  = f.submit "Save", class: "SettingItemForm__button"
+
+
+  .Logout3
+  .Logout__btn3
+    = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn3'
+
+.Toppage2
+  .Toppage__btn2
+    = link_to "トップページ", root_path, method: :get, class: 'toppage-btn2'
+
