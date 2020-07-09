@@ -3,13 +3,14 @@ class MessagesController < ApplicationController
 
   def index
     @message = Message.new
+    @messages = @item.messages.includes(:shop)
   end
 
   
   def create
-    @message = @item.message.new(message_params)
+    @message = @item.messages.new(message_params)
     if @message.save
-      redirect_to item_messages_path(@item), notice: 'メッセージが送信されました'
+      redirect_to messages_path(@item), notice: 'メッセージが送信されました'
     else
       @messages = @item.messages.includes(:shop)
       flash.now[:alert] = 'メッセージを入力してください。'
@@ -24,6 +25,7 @@ class MessagesController < ApplicationController
   end
 
   def set_item
-    @item = Item.find(params[:item_id])
+    @item = Item.find(params[:id])
+    binding.pry
   end
 end

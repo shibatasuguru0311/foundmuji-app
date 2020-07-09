@@ -4,7 +4,7 @@
       = icon('fas', 'user-alt', class: 'icon')
     .content__upper__right
       .content__upper__right-name
-        = link_to item.name, messages_path, method: :get, class: 'search-name'
+        = link_to item.name,messages_path(@item), method: :get, class: 'search-name'
       .content__upper__right__element
         .content__upper__right__element-industry
         
