@@ -1,5 +1,5 @@
 %p 商品とうろく
-= form_with model: @item , local: true do |f|
+= form_with model:[@item] , local: true do |f|
   = f.text_field :name, class: "SettingItemForm__input", placeholder: "商品名を入力してください"
   = f.submit "Save", class: "SettingItemForm__button"
 

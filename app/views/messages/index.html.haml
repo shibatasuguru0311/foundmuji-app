@@ -1,5 +1,5 @@
 %h1.Itemname 
-  = item.name
+  = @item.name
 
 .Itemimg
   %p.Image
@@ -21,10 +21,10 @@
 
 
 .Main_chat__Message_form
-  = form_with model: [@message], html: {class: "form"}, local: true do |f|
+  =form_with model:[@message], html: {class: "form"}, local: true do |f|
     .input-box
       = f.text_field :content, class: "input-box__text", placeholder: "type a message"
  
     = f.submit "Send", class: "submit-btn" 
 
-
+s
