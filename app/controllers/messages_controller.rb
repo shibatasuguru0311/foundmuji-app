@@ -2,14 +2,14 @@ class MessagesController < ApplicationController
   #before_action :set_item
 
   def index
-    @item = Item.find_by((id:params[:id]))
+    @item = Item.find_by(params[:item_id])
     @message = Message.new
     @messages = @item.messages.includes(:shop)
   end
 
   
   def create
-    @item = Item.find_by((id:params[:id]))
+    @item = Item.find_by(params[:id])
     @message = @item.messages.new(message_params)
     if @message.save
       redirect_to messages_path(@item), notice: 'メッセージが送信されました'
@@ -19,6 +19,7 @@ class MessagesController < ApplicationController
       render :index
     end
   end
+
 
   private
 

@@ -1,14 +1,17 @@
-%p 商品とうろく
-= form_with model:[@item] , local: true do |f|
-  = f.text_field :name, class: "SettingItemForm__input", placeholder: "商品名を入力してください"
-  = f.submit "Save", class: "SettingItemForm__button"
-
-
-  .Logout3
-  .Logout__btn3
-    = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn3'
-
-.Toppage2
-  .Toppage__btn2
-    = link_to "トップページ", root_path, method: :get, class: 'toppage-btn2'
+.Top-create
+  %p.Top-icon
+    =image_tag "heart1.png", alt: "入力は慎重に", class: "top-icon1"
+    =image_tag "heart2.png", alt: "入力は慎重に", class: "top-icon2"
+    =image_tag "heart3.png", alt: "入力は慎重に", class: "top-icon3"
+  %p    正確な商品名で入力
+.Setting
+  = form_with model:[@item] , local: true , class: "SettingItem" do |f|
+    = f.text_field :name, class: "SettingItemForm__input", placeholder: "商品名を入力してください"
+    = f.submit "とうろく", class: "SettingItemForm__button"
+    .Logout3
+      .Logout__btn3
+        = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn3'
+    .Toppage2
+      .Toppage__btn2
+        = link_to "トップ", root_path, method: :get, class: 'toppage-btn2'
 

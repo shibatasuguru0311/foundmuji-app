@@ -1,0 +1,81 @@
+.BtnBtn{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  .Logout4{
+    .Logout__btn4{
+      background-color: rgb(231, 231, 230);
+      font-size: 16px;
+      border: 1px solid black;
+      border-radius:50px;
+      padding: 11px 10px;
+      width: 120px;
+      text-align: center;
+      margin:0px 10px;
+      .logout-btn4{
+        color: black;
+        margin:15px;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration:none;
+      }
+    }
+  }
+
+  .Toppage3{
+    .Toppage__btn3{
+      background-color: rgb(231, 231, 230);
+      font-size: 16px;
+      border: 1px solid black;
+      border-radius:50px;
+      padding: 11px 10px;
+      width: 120px;
+      text-align: center;
+      margin:0px 10px;
+      .toppage-btn3{
+        text-decoration: none;
+        color: black;
+        margin:15px;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .contents{
+    .content__title{
+      font-size: 32px;
+      font-weight: bold;
+      margin-right: 40px;
+    }
+  }
+}
+
+.content{
+  .content__upper{
+    display: flex;
+    justify-content: center;
+    p.content__upper-icon{
+      .contact__upper-icon-heart{
+        height:50px;
+        width:50px;
+        margin-right: 10px;
+      }
+    }
+    .content__upper__right{
+      display: flex;
+      align-items:center;
+      .content__upper__right-name{
+        a.search-name{
+          color: black;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+}
+
+
+

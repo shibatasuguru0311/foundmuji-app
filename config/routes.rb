@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   #get 'shops/index'
   root "shops#index"
   resources :shops 
-  resources :items, only: [:new, :create] do
-    resources :messages, only:[:index, :create]
+  resources :items, only: [:new, :index, :create] do
+    resources :messages
     collection do
       get 'search'
     end

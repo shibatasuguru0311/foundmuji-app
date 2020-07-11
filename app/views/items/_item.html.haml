@@ -1,9 +1,8 @@
 .content
   .content__upper
-    .content__upper-icon
-      = icon('fas', 'user-alt', class: 'icon')
+    %p.content__upper-icon
+      =image_tag "heart-brown.jpg", alt: "該当商品", class: "contact__upper-icon-heart"
     .content__upper__right
       .content__upper__right-name
         = link_to item.name,item_messages_path(item.id), method: :get, class: 'search-name'
-      .content__upper__right__element
-        .content__upper__right__element-industry
+

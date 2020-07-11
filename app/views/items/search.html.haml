@@ -1,19 +1,17 @@
 .Search__Btn
   = form_with(url: search_items_path, local: true, method: :get, class: "search-name") do |form|
     = form.text_field :keyword, placeholder: "商品を検索する", class: "search-input"
-    = form.submit "検索", class: "search-btn" 
+    = form.submit "さがす", class: "search-btn" 
+.BtnBtn
+  .contents
+    .content__title
+      検索結果
+  .Logout4
+    .Logout__btn4
+      = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn4'
+  .Toppage3
+    .Toppage__btn3
+      = link_to "トップ", root_path, method: :get, class: 'toppage-btn3'
 
-.Logout4
-  .Logout__btn4
-    = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn4'
-
-.Toppage3
-  .Toppage__btn3
-    = link_to "トップページ", root_path, method: :get, class: 'toppage-btn3'
-
-
-.contents
-  .content__title
-    検索結果
-  - @items.each do |item|
-    = render partial: "item",locals: { item: item }
+- @items.each do |item|
+  = render partial: "item",locals: { item: item }
