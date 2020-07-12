@@ -4,7 +4,7 @@
   %h1.Itemname 
     = @item.name
 
-.MessageBox
+.MessageBoxMain
   = render partial: 'message', collection: @messages
     
 
@@ -20,10 +20,9 @@
 
 
 .Main_chat__Message_form
-  -#=form_with model:[@message], html: {class: "form"}, local: true do |f|
-    -# .input-box
-    -# = f.text_field :content, class: "input-box__text", placeholder: "type a message"
- 
-    -# = f.submit "Send", class: "submit-btn" 
+  =form_with model:[@item,@message], html: {class: "form"}, local: true do |f|
+    .input-box
+      = f.text_field :content, class: "input-box__text", placeholder: "商品のヒントをつぶやこう"
+      = f.submit "そうしん", class: "submit-btn" 
 
 

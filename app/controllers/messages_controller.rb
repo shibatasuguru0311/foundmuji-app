@@ -12,7 +12,7 @@ class MessagesController < ApplicationController
     @item = Item.find(params[:item_id])
     @message = @item.messages.new(message_params)
     if @message.save
-      redirect_to messages_path(@item), notice: 'メッセージが送信されました'
+      redirect_to item_messages_path(@item)
     else
       @messages = @item.messages.includes(:shop)
       flash.now[:alert] = 'メッセージを入力してください。'
