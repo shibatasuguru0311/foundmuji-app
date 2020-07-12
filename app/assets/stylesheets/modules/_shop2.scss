@@ -2,147 +2,96 @@
   box-sizing: border-box;
 }
 
-.Header{
-  flex-direction: row;
-  display: flex;
-  justify-content: center;
-  alignitems: center;
-  .Image{
-    margin-bottom: 30px;
-  }
-}
-.first-message{
-  text-align: center;
-  font-size: 12px;
-  }
-
-  .Search__Btn{
+    .Header{
+    flex-direction: row;
     display: flex;
     justify-content: center;
-    form{
-    display: flex;
-    justify-content: center;
-    width: 600px;
-    .search-name{
-      height: 50px;
-      background-color: pink;
-      border: none;
-      border-radius: 10px;
-      padding-left:10px;
+    alignitems: center;
+    .image{
+      height:200px;
+      width:200px;
     }
-    .search-btn{
-      width: 100px;
-      height: 50px;
-      padding: 0 5px;
-      margin-left: 5px;
-      background-color: pink;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      color: white;
-
     }
-  }
-}
-
-.second-message{
-  text-align: center;
-  font-size: 12px;
-  }
-
-  .Wbtn{
-    display: flex;
-    justify-content: center;
-      .create-btn{
-        idth: 100px;
-      height: 50px;
-      padding: 0 5px;
-      margin-left: 5px;
-      background-color: pink;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      }
-      .like-btn{
-      width: 100px;
-      height: 50px;
-      padding: 0 5px;
-      margin-left: 5px;
-      background-color: pink;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      }
-  }
-
-  .third-message{
+    .first-message{
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
+    font-weight: bold;
     }
 
-    .Btn{   
+    .Search__Btn{
       display: flex;
       justify-content: center;
-      .btn-one{
-        width: 100px;
-      height: 50px;
-      padding: 0 5px;
-      margin-left: 5px;
-      background-color: pink;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      color: white;
+      margin: 50px 20px;
+      form.search-name{
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        .search-input{
+          width:500px;
+        }
+        .search-btn{
+          height: 50px;
+          width: 100px;
+          background-color:rgb(222, 208, 178);
+          border: none;
+          border-radius: 50px;
+          padding-left:10px;
+          border: 1px solid black;
+          margin-left:20px;
       }
-      .btn-two{
-        width: 100px;
-      height: 50px;
-      padding: 0 5px;
-      margin-left: 5px;
-      background-color: pink;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      }
-      .btn-three{
-        width: 100px;
-      height: 50px;
-      padding: 0 5px;
-      margin-left: 5px;
-      background-color: pink;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      }
-      .btn-four{
-        width: 100px;
-      height: 50px;
-      padding: 0 5px;
-      margin-left: 5px;
-      background-color: pink;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      }
+      // .search-btn{
+      //   width: 100px;
+      //   height: 50px;
+      //   padding: 0 5px;
+      //   margin-left: 5px;
+      //   background-color: pink;
+      //   font-size: 16px;
+      //   border: none;
+      //   border-radius: 10px;
+      //   color: white;
+      //}
     }
-    .Logout{   
+    }
+
+    .Tbtn{
       display: flex;
       justify-content: center;
-      .logout-btn{
+        .Create__Btn{
+          height: 60px;
+          width: 120px;
+          .create-btn{
+            padding: 15px 22px;
+            background-color: rgb(231, 231, 230);
+            font-size: 16px;
+            border: 1px solid black;
+            border-radius: 50px;
+            text-decoration: none;
+            color: black;
+
+          }  
+        }
+        .like-btn{
         width: 100px;
-      height: 50px;
-      padding: 0 5px;
-      margin-left: 5px;
-      background-color: pink;
-      font-size: 16px;
-      border: none;
-      border-radius: 10px;
-      color: white;
-      margin-top:100px;
+        height: 50px;
+        padding: 0 5px;
+        margin: -30px 45px 20px 20px;
+        background-color: rgb(231, 231, 230);
+        font-size: 16px;
+        border: 1px solid black;
+        border-radius:50px;
+        }
+        .Logout__Btn{
+          height: 60px;
+          width: 120px;
+        a.logout-btn{
+          width:100px;
+          padding: 15px 18px;
+          background-color: rgb(231, 231, 230);
+          font-size: 16px;
+          border: 1px solid black;
+          border-radius: 50px;
+          text-decoration: none;
+          color: black;
+        }
       }
     }

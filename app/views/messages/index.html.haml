@@ -1,30 +1,28 @@
-%h1.Itemname 
-  = item.name
-
 .Itemimg
   %p.Image
-    =image_tag "koala-pan.jpg", alt: "イメージ画像未登録", class: "image"
-    
-.MessageBox
+    =image_tag "Boys&Girls", alt: "商品名：", class: "image"
+  %h1.Itemname 
+    = @item.name
+
+.MessageBoxMain
   = render partial: 'message', collection: @messages
     
 
+.BtnBtnBtn
+  .Logout4
+    .Logout__btn4
+      = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn4'
 
-.Logout2
-  .Logout__btn2
-    = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn2'
-
-.Toppage
-  .Toppage__btn
-    = link_to "トップページ", root_path, method: :get, class: 'toppage-btn'
+  .Toppage3
+    .Toppage__btn3
+      = link_to "トップ", root_path, method: :get, class: 'toppage-btn3'
 
 
 
 .Main_chat__Message_form
-  = form_with model: [@message], html: {class: "form"}, local: true do |f|
+  =form_with model:[@item,@message], html: {class: "form"}, local: true do |f|
     .input-box
-      = f.text_field :content, class: "input-box__text", placeholder: "type a message"
- 
-    = f.submit "Send", class: "submit-btn" 
+      = f.text_field :content, class: "input-box__text", placeholder: "商品のヒントをつぶやこう"
+      = f.submit "そうしん", class: "submit-btn" 
 
 
