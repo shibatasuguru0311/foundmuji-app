@@ -12,7 +12,10 @@ class MessagesController < ApplicationController
     @item = Item.find(params[:item_id])
     @message = @item.messages.new(message_params)
     if @message.save
-      redirect_to item_messages_path(@item)
+      respond_to do |format|
+        ##format.html { redirect_to item_messages_path }
+        format.json
+      end
     else
       @messages = @item.messages.includes(:shop)
       flash.now[:alert] = 'メッセージを入力してください。'
@@ -31,3 +34,4 @@ class MessagesController < ApplicationController
     #@item = Item.find_by(id: params[:format])
   #end
 end
+
