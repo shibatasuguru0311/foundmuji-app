@@ -89,7 +89,16 @@
   width: calc(100vw);
   height: calc(100vh - 190px);
   overflow: scroll;
-
+  .MessageAll{
+    display: flex;
+    justify-content:center;
+    p.Iine{
+      .iine{
+        height:50px;
+        width:50px;
+        margin: 20px 0px 0px 30px;
+      }
+    }
     .MessageBox{
       font-size: 14px;
       color: #434A54;
@@ -97,29 +106,30 @@
       padding: 12px 0px 15px 40px;
       border: 1px solid black;
       //border-radius: 50px;
-      margin-bottom: 15px;
-    }
-    .user1{
-      display:flex;
-      justify-content: flex-left;
-      &-name{
-        font-size: 16px;
-        color: #333333;
-        font-weight: bold;
-        text-decoration: underline;
+      margin: 10px;
+      height: 80px;
+      width: 100%;
+      .user1{
+        display:flex;
+        justify-content: flex-left;
+        &-name{
+          font-size: 16px;
+          color: #333333;
+          font-weight: bold;
+          text-decoration: underline;
+        }
+        &-createdup{
+          font-size: 15px;
+          color: #999999;
+          padding-left: 10px;
+        }
       }
-      &-createdup{
-        font-size: 15px;
-        color: #999999;
-        padding-left: 10px;
-      }
-    }
-    .user-text{
-      p.Message__content{
-        color: black;
-        font-weight: bold;
-        font-size: 18px;
-
+        p.Message__content{
+          color: black;
+          font-weight: bold;
+          font-size: 18px;
+          margin-top: 5px;
       }
     }
   }
+}
