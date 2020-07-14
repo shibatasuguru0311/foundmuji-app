@@ -11,7 +11,7 @@ $(function(){
           <div class="use">
             <div class="user1">
               <div class="user1-name">
-                ${message.users_name}
+                ${message.user_name}
               </div>
               <div class="user1-createdup">
                 ${message.created_at}
@@ -39,17 +39,18 @@ $(function(){
     })
     .done(function(data){
       let html = buildHTML(data);
+      $('.MessageBoxMain').append(html);   
+      $('form')[0].reset(); 
+      $('.MessageBoxMain').animate({ scrollTop: $('.MessageBoxMain')[0].scrollHeight}); 
+      $('input.submit-btn').prop('disabled', false);
+    })  
+    .fail(function(){
+      alert('error');
     })
   });
 });  
-//       $('.messages').append(html);
-//       $('.input-box__text').val('');
-//       $('.submit-btn').prop('disabled', false);
-//     })  
-//     .fail(function(){
-//       alert('error');
-//     })
-//   })
-// }}
+ 
+
+
 
 
