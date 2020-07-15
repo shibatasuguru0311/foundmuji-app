@@ -20,8 +20,7 @@
       = link_to "つくる", new_item_path, method: :get, class: 'create-btn'
 
     .Like__Btn
-      = form_with model: @item do |form|
-        = form.submit "いいね", class: 'like-btn'
+      = link_to "いいね", items_path,  method: :get, class: 'like-btn'
 
     .Logout__Btn
       = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn'

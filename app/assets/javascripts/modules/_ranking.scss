@@ -1,0 +1,38 @@
+.Ranking{
+  display: flex;
+  justify-content: center;
+    h2.aaa{
+      font-size: 50px;
+      color: black;
+      margin-top:30px;
+    
+    p.top-iconboy{
+      height:50px;
+      width:50px;
+    }
+  }
+}
+
+  .Ranking-main{
+    border: 1px solid rgb(190, 185, 185);
+    .ranking__content{
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+      p.ranking__number{
+        font-size:20px;
+        margin-right:20px;
+        color:rgb(222, 208, 178);
+      }
+      .ranking__name{
+        font-size:20px;
+        font-weight: bold;
+      }
+      p.ranking__iine{
+        font-size:20px;
+        margin-left: 30px;
+        text-decoration: underline black;
+      
+      }
+    }
+  }
