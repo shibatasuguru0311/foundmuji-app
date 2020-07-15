@@ -6,12 +6,35 @@
       width: 200px;
       height:100px;
     }
-  }
+}
   h1.Itemname{
     margin:60px 0px 0px 50px;
     font-size: 30px;
   }
 }
+p.many_like{
+  font-size:40px;
+  margin-left: 75px;
+  font-weight: bold;
+  display: inline;
+  padding: 15px;
+
+}
+
+.red-heart{
+  color: rgb(175, 6, 6);
+  font-size:25px;
+  margin-left:90px;
+  text-decoration: none;
+}
+.black-heart{
+  color: rgb(184, 184, 184);
+  font-size: 25px;
+  margin-left: 90px;
+  text-decoration: none;
+}
+
+
 
 .BtnBtnBtn{
   margin-bottom: 50px;

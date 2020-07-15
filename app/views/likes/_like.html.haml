@@ -1,0 +1,9 @@
+- if current_shop.already_liked?(@item) 
+    = link_to item_like_path(@item,id:item), method: :delete, class:"red-heart", remote: true do
+        %i.fa.fa-heart
+        =item.likes.count
+- else
+    = link_to item_likes_path(@item,id:item), method: :post, class:"black-heart", remote: true do
+        %i.fa.fa-heart
+        =item.likes.count
+//@item.liked_shops.count 
