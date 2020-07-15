@@ -70,16 +70,22 @@
 
           }  
         }
-        .like-btn{
-        width: 100px;
-        height: 50px;
-        padding: 0 5px;
-        margin: -30px 45px 20px 20px;
-        background-color: rgb(231, 231, 230);
-        font-size: 16px;
-        border: 1px solid black;
-        border-radius:50px;
+
+        .Like__Btn{
+          height: 60px;
+          width: 120px;
+        a.like-btn{
+          width:100px;
+          padding: 15px 18px;
+          background-color: rgb(231, 231, 230);
+          font-size: 16px;
+          border: 1px solid black;
+          border-radius: 50px;
+          text-decoration: none;
+          color: black;
         }
+      }
+
         .Logout__Btn{
           height: 60px;
           width: 120px;
@@ -94,4 +100,4 @@
           color: black;
         }
       }
-    }
+  }

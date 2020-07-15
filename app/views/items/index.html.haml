@@ -1,0 +1,43 @@
+.Ranking  
+  %h2.aaa  いいね ランキング
+  %p.Ranking-icon
+    =image_tag "heart-yellow.jpg", alt: "おめでとう", class: "top-iconboy"
+.Ranking-main
+  - @all_ranks.each.with_index(1) do |item,i|
+    .ranking__contents
+      .ranking__content
+        %p.ranking__number No.#{i}
+        .ranking__name 
+          = item.name
+        %p.ranking__iine #{item.likes.count}いいね 
+          
+              
+
+.BtnBtn
+  .Logout4
+    .Logout__btn4
+      = link_to "ログアウト", destroy_shop_session_path, method: :delete, class: 'logout-btn4'
+  .Toppage3
+    .Toppage__btn3
+      = link_to "トップ", root_path, method: :get, class: 'toppage-btn3'
+
+
+
+
+  -#     .ranking__content
+  -#   .ranking__number
+  -# No.
+  -# = i
+  -# .ranking__name  
+  -# = item.name
+  -# .ranking__number
+  -# =item.likes.count
+  -# LIKE
+
+
+  -# .MessageBox{data: {message: {id: message.id}}}
+  -#   .use
+  -#     .user1
+  -#       .user1-name 
+  -#         = message.shop.name
+  -#       .user1-createdup
