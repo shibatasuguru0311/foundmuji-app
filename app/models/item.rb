@@ -2,6 +2,7 @@ class Item < ApplicationRecord
   has_many :messages
   has_many :shops, through: :shops_items
   has_many :shops_items
+  has_many :likes, dependent: :destroy
   validates :name, presence: true, uniqueness: true
 
   def self.search(search)

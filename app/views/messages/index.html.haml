@@ -3,6 +3,9 @@
     =image_tag "Boys&Girls", alt: "商品名：", class: "image"
   %h1.Itemname 
     = @item.name
+.iine-btn
+  = render 'likes/like', item: @item
+  
 
 .MessageBoxMain
   = render partial: 'message', collection: @messages
