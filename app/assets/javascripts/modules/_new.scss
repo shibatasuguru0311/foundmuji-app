@@ -1,29 +1,18 @@
-.Top-create{
-  display: flex;
-  justify-content: center;
-  p.Top-icon{
-    .top-icon1{
-      width:70px;
-      height:70px;
-      margin-top: 50px;
-    }
-    .top-icon2{
-      width:80px;
-      height:80px;
-    }
-    .top-icon3{
-      width:90px;
-      height:90px;
-    }
-  }
-  p{
-    font-size: 40px;
-    font-weight: bold;
-    margin: 50px;
-    padding-top:50px;
+p{
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: center;
+}
+p.Top-icon{
+  .top-icon1{
+    width:300px;
+    height:230px;
+    //margin-top: 50px;
+    text-align: center;
+  
   }
 }
-
 .Setting{
   form.SettingItem{
     display: flex;
@@ -42,90 +31,135 @@
       margin-left:20px;
       color: black;
     }
+  }
+}
+.twobtn{
+  display: flex;
+  justify-content:center;
+  margin-top:20px;
+  .Logout3{
+    .Logout__btn3{
+      background-color: rgb(231, 231, 230);
+      border: 1px solid black;
+      border-radius:50px;
+      margin: 0px 20px;
+      padding: 11px 10px 6px 15px;
+      width: 120px;
+      height: 50px;
+      align-items: center;
+      .logout-btn3{
+        text-decoration: none;
+        color: black;
+        margin:15px;
+        font-size: 12px;
+        //font-weight: bold;
+      }
+    }
+  }
+
+  .Toppage2{
+    .Toppage__btn2{
+      background-color: rgb(231, 231, 230);
+      border: 1px solid black;
+      border-radius:50px;
+      width: 120px;
+      height: 50px;
+      align-items: center;
+      padding: 12px  0px 10px 20px;
+      .toppage-btn2{
+        text-decoration: none;
+        color: black;
+        margin:15px;
+        font-size: 14px;
+        //font-weight: bold;
+        
+      }
+    }
+  }
+}
+
+
+@media (max-width: 670px)
+{
+  p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    text-align: center;
+  }
+  p.Top-icon{
+    .top-icon1{
+      width:300px;
+      height:230px;
+      //margin-top: 50px;
+      text-align: center;
+    
+    }
+  }
+  .Setting{
+    form.SettingItem{
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      .SettingItemForm__input{
+        width:500px;
+      }
+      .SettingItemForm__button{
+        height: 50px;
+        width: 100px;
+        background-color:rgb(222, 208, 178);
+        border: none;
+        border-radius: 50px;
+        border: 1px solid black;
+        margin:0px 5px;
+        color: black;
+      }
+    }
+  }
+  .twobtn{
+    display: flex;
+    justify-content:center;
+    margin-top:20px;
     .Logout3{
       .Logout__btn3{
         background-color: rgb(231, 231, 230);
-        font-size: 16px;
         border: 1px solid black;
         border-radius:50px;
         margin: 0px 20px;
-        padding: 11px 10px;
+        padding: 11px 10px 6px 15px;
+        width: 120px;
+        height: 50px;
+        align-items: center;
         .logout-btn3{
           text-decoration: none;
           color: black;
           margin:15px;
           font-size: 12px;
-          font-weight: bold;
+          //font-weight: bold;
         }
       }
     }
+
     .Toppage2{
       .Toppage__btn2{
         background-color: rgb(231, 231, 230);
-        font-size: 16px;
         border: 1px solid black;
         border-radius:50px;
-        padding: 11px 10px;
+        width: 120px;
+        height: 50px;
+        align-items: center;
+        padding: 12px  0px 10px 20px;
         .toppage-btn2{
           text-decoration: none;
           color: black;
           margin:15px;
-          font-size: 12px;
-          font-weight: bold;
+          font-size: 14px;
+          //font-weight: bold;
+          
         }
       }
     }
-
-
   }
+ 
+
 }
-
-// .Logout3{
-//   margin-top: 50px;
-//   .Logout__btn3{
-//     width: 100px;
-//       height: 50px;
-//       padding: 0 5px;
-//       background-color: rgb(231, 231, 230);
-//       font-size: 16px;
-//       border: 1px solid black;
-//       border-radius:50px;
-//       margin:25px 0px 30px 100px;
-//     .logout-btn3{
-//       text-decoration: none;
-//       margin-top:30px;
-//     }
-//   }
-// }
-
-
-
-
-
-
-
-
-
-// .Setting{
-//   display: flex;
-//   justify-content: center;
-//   margin: 0px 20px;
-//   form.SettingItemForm__input{
-//     display: flex;
-//     justify-content: center;
-//     height: 50px;
-//     width: 500px;
-//   }
-//   .SettingItemForm__button{}
-//     }
-  
-//     .search-btn{
-//       height: 50px;
-//       width: 100px;
-//       background-color:rgb(222, 208, 178);
-//       border: none;
-//       border-radius: 50px;
-//       padding-left:10px;
-//       border: 1px solid black;
-//       margin-left:20px;
-//     }

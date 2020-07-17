@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   devise_for :shops
-  #get 'shops/index'
   root "shops#index"
   resources :shops 
   resources :items, only: [:new, :index, :create] do

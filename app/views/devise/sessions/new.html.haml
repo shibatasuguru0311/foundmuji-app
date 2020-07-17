@@ -3,7 +3,7 @@
     %h2 ログイン
     //= render "devise/shared/links"
     %p.Image
-    =image_tag "man.png", alt: "Found MUJIへようこそ", class: "image"
+    =image_tag "server.png", alt: "Found MUJIへようこそ", class: "image"
   .AccountPage__form
     = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
       .FormBox
@@ -18,3 +18,7 @@
             = f.password_field :password, autocomplete: "off"
         .actions
           = f.submit "スタート", class: 'Button_UserButton'
+
+
+.Logout__btn4
+  = link_to "新規登録", new_shop_registration_path, method: :get, class: 'logout-btn'
