@@ -1,15 +1,15 @@
 class MessagesController < ApplicationController
-  #before_action :set_item
+  before_action :set_item
 
   def index
-    @item = Item.find(params[:item_id])
+    #@item = Item.find(params[:item_id])
     @message = Message.new
     @messages = @item.messages.includes(:shop)
   end
 
   
   def create
-    @item = Item.find(params[:item_id])
+    #@item = Item.find(params[:item_id])
     @message = @item.messages.new(message_params)
     if @message.save
       respond_to do |format|
@@ -30,8 +30,8 @@ class MessagesController < ApplicationController
     params.require(:message).permit(:content).merge(shop_id: current_shop.id, )
   end
 
-  #def set_item
-    #@item = Item.find_by(id: params[:format])
-  #end
+  def set_item
+    @item = Item.find(params[:item_id])
+  end
 end
 

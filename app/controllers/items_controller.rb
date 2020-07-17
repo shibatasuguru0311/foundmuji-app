@@ -2,7 +2,6 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
-    #@item.shops << current_shop
   end
 
   def create

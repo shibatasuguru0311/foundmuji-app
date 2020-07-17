@@ -1,12 +1,11 @@
 .Itemimg
-  %p.Image
-    =image_tag "Boys&Girls", alt: "商品名：", class: "image"
   %h1.Itemname 
     = @item.name
+  %p.Image
+    =image_tag "fish.png", alt: "商品名：", class: "image"
 .iine-btn
   = render 'likes/like', item: @item
   
-
 .MessageBoxMain
   = render partial: 'message', collection: @messages
     
@@ -20,15 +19,9 @@
     .Toppage__btn3
       = link_to "トップ", root_path, method: :get, class: 'toppage-btn3'
 
-
-
 .Main_chat__Message_form
   =form_with model:[@item,@message], html: {class: "form"}, local: true do |f|
     .input-box
       = f.text_field :content, class: "input-box__text", placeholder: "商品のヒントをつぶやこう"
       = f.submit "そうしん", class: "submit-btn" 
-
-
-
-
 

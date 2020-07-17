@@ -4,10 +4,10 @@ $(function(){
       `<div class="MessageAll">
         <div class="Iineimg">
           <p class="Iine">
-            <img alt="いいね：" class="iine" src="/assets/heart-3c2a41f503ccb9ec8e27a3e00f4bbed496c2e78247236aa9a8f9843aa5eb2246.png">
+            <img alt="いいね：" class="iine" src="/assets/supon-bae44cbb6271cbe1216bbde1a78eab1b44890f2bac1199d9e8f04a578aa524db.jpg">
           </p>
         </div>
-        <div class="MessageBox" data-message-id=${message.id}>
+        <div class="MessageBox" data-message-id=${message.id}> 
           <div class="use">
             <div class="user1">
               <div class="user1-name">

@@ -1,14 +1,21 @@
 .MessageAll
   .Iineimg
     %p.Iine
-      =image_tag "heart.png", alt: "いいね：", class: "iine"
+      -#= image_tag message.shop.image
+      -#= image_tag  current_shop.image_url,width:80, class:"personalpicture"
+      =image_tag "yeah.jpg", alt: "いいね：", class: "iine"
   .MessageBox{data: {message: {id: message.id}}}
     .use
       .user1
         .user1-name 
           = message.shop.name
+          = message.shop.image_url
         .user1-createdup
-          = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+          = message.created_at.strftime("%Y.%m.%d. %H.%M")
       %p.Message__content
         = message.content
+      -#.field
+        -#= image_tag @message.shop, width: 100, alt:"画像なし"
+
+
 
