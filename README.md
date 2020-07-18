@@ -1,4 +1,4 @@
-# chat-space  DB設計
+# found-mujiapp  DB設計
 ## shopsテーブル
 | Column | Type | Options |
 |:-------|-----:|:-------:|
