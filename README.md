@@ -12,12 +12,14 @@
 口コミアプリを作成しました。　　
 
 
+
+
 # **実装機能紹介**
 ---
 
 
 ### 商品の口コミチャット機能
-
+<img width="1336" alt="f5b19f3fd7623c49fd795db8bbed5eb3" src="https://user-images.githubusercontent.com/67133171/90229365-c01c8300-de52-11ea-84fa-30199027b83e.png">
 
 ・非同期でメッセージを送信することができる  
 ・ j Query、HAML、SCSSを使用してのマークアップ  
@@ -26,11 +28,14 @@
 ### 商品、新規作成、検索機能
 
 ・新発売された商品を新規作成し登録することができる  
-・商品を検索し、商品口コミページへ飛ぶことができる  
+・商品を検索し、商品口コミページへ飛ぶことができる 
+<img width="1114" alt="78481e92387393962427c0ddadae49b0" src="https://user-images.githubusercontent.com/67133171/90229372-c1e64680-de52-11ea-9286-e0ac9f140dc1.png">
 
 <img width="1299" alt="d433f8411666957faa24893b051e1e4c" src="https://user-images.githubusercontent.com/67133171/90209743-2095cb00-de27-11ea-9dfa-5c25bca47eb7.png">
 
 ### いいね機能
+
+<img width="1213" alt="f89297dea495ae303f45251452112c8e" src="https://user-images.githubusercontent.com/67133171/90229357-be52bf80-de52-11ea-95fb-fca3936b2fef.png">
 
 ・非同期で、いいねボタンを追加  
 ・いいねが多い順番のランキングページを作成  
