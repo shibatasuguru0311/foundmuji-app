@@ -28,6 +28,8 @@
 ・新発売された商品を新規作成し登録することができる  
 ・商品を検索し、商品口コミページへ飛ぶことができる  
 
+<img width="1299" alt="d433f8411666957faa24893b051e1e4c" src="https://user-images.githubusercontent.com/67133171/90209743-2095cb00-de27-11ea-9dfa-5c25bca47eb7.png">
+
 ### いいね機能
 
 ・非同期で、いいねボタンを追加  
